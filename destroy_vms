@@ -1,0 +1,6 @@
+#!/bin/bash
+source networks
+
+vagrant destroy
+VBoxManage hostonlyif remove $N1
+VBoxManage hostonlyif remove $N2

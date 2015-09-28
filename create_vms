@@ -1,0 +1,7 @@
+#!/bin/bash
+echo N1=`VBoxManage hostonlyif create | grep -ow 'vboxnet[0-9]\+'` > networks
+echo N2=`VBoxManage hostonlyif create | grep -ow 'vboxnet[0-9]\+'` >> networks
+
+source networks
+
+vagrant up
