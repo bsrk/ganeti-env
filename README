@@ -2,6 +2,8 @@ This setup is to create a test environment for developing ganeti.
 It by itself neither requires nor makes configuration changes in
 the host machine.
 
+This setup requires virtualbox and vagrant.
+
 Some precautions. Run create_vms to create the VMs. DO NOT use
 vagrant up. Similarly, Run destroy_vms to destroy the VMs.
 vagrant up and vagrant halt can be used to start and stop the VMs
